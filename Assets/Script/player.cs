@@ -9,10 +9,13 @@ public class player : MonoBehaviour
     public float ve;
     public int bullet;
    public float maxSpeed;
+   
+    
     
     void Start()
     {
       rb = GetComponent<Rigidbody2D>();
+        
         
     }
 
@@ -23,7 +26,7 @@ public class player : MonoBehaviour
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
 
-        Debug.Log(rb.velocity.magnitude);
+       
         if(rb.velocity.magnitude > maxSpeed)
         {
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
@@ -34,11 +37,20 @@ public class player : MonoBehaviour
         {
             rb.velocity = -mousePosition * ve;
             bullet--;
+            
+        }
+       if(Input.GetMouseButtonDown(0) && bullet == 0 )
+        {
+           maxSpeed = maxSpeed + 10;
         }
         if (Input.GetKeyDown("r") && bullet == 0)
         {
             bullet++;
             bullet++;
+            maxSpeed = 20;
         }
+        
+      
     }
+    
 }

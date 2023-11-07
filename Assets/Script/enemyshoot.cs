@@ -10,6 +10,9 @@ public class enemyshoot : MonoBehaviour
 
     private float timer;
     private GameObject player;
+    public int enmyHealthMax = 100;
+    public healthBar ehb;
+    public int currentEnemyHealth;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
