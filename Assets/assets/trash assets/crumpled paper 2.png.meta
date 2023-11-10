@@ -188,7 +188,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      crumpled paper 2_0: 182298728129000860
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

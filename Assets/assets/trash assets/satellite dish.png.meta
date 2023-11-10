@@ -188,7 +188,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      satellite dish_0: 3052826566687857153
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

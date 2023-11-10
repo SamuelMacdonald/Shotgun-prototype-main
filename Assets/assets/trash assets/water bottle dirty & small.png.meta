@@ -188,7 +188,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      water bottle dirty & small_0: 115706365708879922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

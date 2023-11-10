@@ -188,7 +188,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rotting food 2_0: 1334079502393199686
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

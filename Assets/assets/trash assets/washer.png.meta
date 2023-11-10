@@ -188,7 +188,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      washer_0: 1462508785629367448
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public healthBar hb;
+    public int Respawn;
 
     private void Start()
     {
@@ -21,7 +23,7 @@ public class PlayerHealth : MonoBehaviour
         hb.SetHealth(currentHealth);
         if(currentHealth <= 0)
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene(Respawn);
         }
     }
 }

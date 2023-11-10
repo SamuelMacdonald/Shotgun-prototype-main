@@ -188,7 +188,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rusty sheet metal tile 16x16 2_0: -4224021558966265949
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -188,7 +188,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      water bottle crumpled_0: -6967085287580285307
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

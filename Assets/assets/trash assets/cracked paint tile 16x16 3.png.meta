@@ -188,7 +188,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cracked paint tile 16x16 3_0: -1917429417080802669
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
