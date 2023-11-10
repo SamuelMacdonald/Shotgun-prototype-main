@@ -12,14 +12,15 @@ public class player : MonoBehaviour
    public float maxSpeed;
     public Vector3 screenPosition;
     public Vector3 worldPosition;
-    
+    BoxCollider2D bc;
+    [SerializeField] private LayerMask lm;
    
     
     
     void Start()
     {
       rb = GetComponent<Rigidbody2D>();
-        
+      bc = GetComponent<BoxCollider2D>();
         
     }
 
@@ -45,15 +46,18 @@ public class player : MonoBehaviour
             bullet--;
             
         }
-       if(Input.GetMouseButtonDown(0) && bullet == 0 )
+        if (Input.GetMouseButtonDown(0) && bullet == 1)
         {
-           maxSpeed = maxSpeed + 10;
+            maxSpeed = maxSpeed * 1.5f;
+        }
+        if (Input.GetMouseButtonDown(0) && bullet == 0 )
+        {
+            ve = ve + 5;
             
         }
-        if (Input.GetKeyDown("r") && bullet == 0)
+        if (IsGrounded() && Input.GetKeyDown("r") && bullet == 0)
         {
-            bullet++;
-            bullet++;
+            bullet = 3;
             maxSpeed = 20;
             ve = 10;
         }
@@ -61,9 +65,22 @@ public class player : MonoBehaviour
         
       
     }
-    private void FixedUpdate()
+   private bool IsGrounded()
     {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        float extraHeightText = 5f;
+        RaycastHit2D raycastHit = Physics2D.Raycast(bc.bounds.center, Vector2.down, bc.bounds.extents.y + extraHeightText, lm);
+        Color rayColor;
+        if(raycastHit.collider != null)
+        {
+            rayColor = Color.green;
+        }
+        else
+        {
+            rayColor = Color.red;
+        }
+        Debug.DrawRay(bc.bounds.center, Vector2.down * (bc.bounds.extents.y));
+        Debug.Log(raycastHit.collider);
+        return raycastHit.collider != null;
     }
 
 }

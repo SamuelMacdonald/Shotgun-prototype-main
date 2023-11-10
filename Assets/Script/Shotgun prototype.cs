@@ -7,6 +7,12 @@ public class Shotgunprototype : MonoBehaviour
     // Start is called before the first frame update
     public float turnSpeed;
     public int bullet;
+    public Transform shotPos1;
+    public Transform shotPos2;
+    public Transform shotPos3;
+    public GameObject pellet;
+    public float spread;
+    public float bulletSpeed;
     void Start()
     {
          
@@ -28,12 +34,21 @@ public class Shotgunprototype : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && bullet >= 1)
         {
             bullet--;
+            shoot();
+
         }
         if (Input.GetKeyDown("r") && bullet == 0)
         {
-            bullet++;
-            bullet++;
+            bullet = 3;
         }
 
     }
+     public void shoot()
+    {
+        GameObject bullets1 = Instantiate(pellet,shotPos1.position, shotPos1.rotation);
+        GameObject bullets2 = Instantiate(pellet, shotPos2.position, shotPos2.rotation);
+        GameObject bullets3 = Instantiate(pellet, shotPos3.position, shotPos3.rotation);
+    }
+    
+    
 }
