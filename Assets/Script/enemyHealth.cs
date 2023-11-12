@@ -22,7 +22,7 @@ public class enemyHealth : MonoBehaviour
         hb.SetHealth(currentHealth);
         if (currentHealth <= 0)
         {
-            SceneManager.LoadScene(Respawn);
+            Destroy(gameObject);
         }
     }
 }

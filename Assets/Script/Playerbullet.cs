@@ -7,6 +7,7 @@ public class Playerbullet : MonoBehaviour
     // Start is called before the first frame update
     public float speed = 20f;
     public Rigidbody2D rb;
+    public int damage = 20;
     void Start()
     {
         rb.velocity = transform.right * speed;
@@ -19,16 +20,11 @@ public class Playerbullet : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "enemy" && collider.gameObject.tag == "ground")
+        enemyHealth en = collider.GetComponent<enemyHealth>();
+        if(en != null)
         {
-            Destroy(gameObject);
-            var healthComponent = collider.GetComponent<enemyHealth>();
-            if (healthComponent != null)
-            {
-                healthComponent.TakeDamge(20);
-
-            }
-
+            en.TakeDamge(damage);
         }
+        Destroy(gameObject);
     }
 }
