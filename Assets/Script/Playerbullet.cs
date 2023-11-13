@@ -26,5 +26,6 @@ public class Playerbullet : MonoBehaviour
             en.TakeDamge(damage);
         }
         Destroy(gameObject);
+       
     }
 }

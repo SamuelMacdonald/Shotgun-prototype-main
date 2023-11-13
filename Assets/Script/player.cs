@@ -14,13 +14,14 @@ public class player : MonoBehaviour
     public Vector3 worldPosition;
     BoxCollider2D bc;
     [SerializeField] private LayerMask lm;
-   
+    Animator an;
     
     
     void Start()
     {
       rb = GetComponent<Rigidbody2D>();
       bc = GetComponent<BoxCollider2D>();
+        an = GetComponent<Animator>();
         
     }
 
@@ -52,7 +53,7 @@ public class player : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0) && bullet == 0 )
         {
-            ve = ve + 5;
+            ve = ve + 2;
             
         }
         if (IsGrounded() && Input.GetKeyDown("r") && bullet == 0)
@@ -60,6 +61,14 @@ public class player : MonoBehaviour
             bullet = 3;
             maxSpeed = 20;
             ve = 10;
+        }
+        if (IsGrounded() == false)
+        {
+            an.SetBool("air", true);
+        }
+        else
+        {
+            an.SetBool("air", false);
         }
         
         

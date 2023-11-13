@@ -13,9 +13,11 @@ public class Shotgunprototype : MonoBehaviour
     public GameObject pellet;
     public float spread;
     public float bulletSpeed;
+ 
+
     void Start()
     {
-         
+       
     }
 
     // Update is called once per frame
@@ -49,6 +51,6 @@ public class Shotgunprototype : MonoBehaviour
         GameObject bullets2 = Instantiate(pellet, shotPos2.position, shotPos2.rotation);
         GameObject bullets3 = Instantiate(pellet, shotPos3.position, shotPos3.rotation);
     }
-    
-    
+  
+
 }

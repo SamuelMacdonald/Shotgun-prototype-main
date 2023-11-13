@@ -15,7 +15,7 @@ public class EnemyFlip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 scale = transform.localScale;
+       /* Vector3 scale = transform.localScale;
 
         if(player.transform.position.x > transform.position.x)
         {
@@ -26,5 +26,6 @@ public class EnemyFlip : MonoBehaviour
             scale.x = Mathf.Abs(scale.x) * (flip ? -1 : 1);
         }
         transform.localScale = scale;
+       */
     }
 }

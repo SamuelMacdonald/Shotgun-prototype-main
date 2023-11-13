@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 8966ef9071771f14c9887d13c78c755d
+guid: fabf2535f35dc3e4685f6ebfa17cc8ab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 10121663748998302
-    second: night-sky-pixel-city-background-zrvtk8re1lj2vb1y_0
+      213: -1751807871280513449
+    second: thing2_0
+  - first:
+      213: 5477048182616054583
+    second: thing2_1
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -83,7 +86,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Standalone
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -95,7 +98,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -158,13 +161,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: night-sky-pixel-city-background-zrvtk8re1lj2vb1y_0
+      name: thing2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 7
+        y: 167
+        width: 135
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,8 +175,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e948b4c7995f32000800000000000000
-      internalID: 10121663748998302
+      spriteID: 75e7795c50450b7e0800000000000000
+      internalID: -1751807871280513449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thing2_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 160
+        width: 135
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b578ead42620c40800000000000000
+      internalID: 5477048182616054583
       vertices: []
       indices: 
       edges: []
@@ -188,8 +212,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      night-sky-pixel-city-background-zrvtk8re1lj2vb1y_0: 10121663748998302
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
