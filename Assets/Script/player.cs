@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+using UnityEditor.Experimental;
 using UnityEngine;
 
 public class player : MonoBehaviour
@@ -56,7 +56,7 @@ public class player : MonoBehaviour
             ve = ve + 2;
             
         }
-        if (IsGrounded() && Input.GetKeyDown("r") && bullet == 0)
+        if (IsGrounded() && Input.GetKeyDown("r"))
         {
             bullet = 3;
             maxSpeed = 20;

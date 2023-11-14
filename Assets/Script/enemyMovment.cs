@@ -21,8 +21,9 @@ public class enemyMovment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 point = currentPoint.position - transform.position;
-        if(currentPoint == pointB.transform)
+        Vector3 vector3 = currentPoint.position - transform.position;
+        _ = vector3;
+        if (currentPoint == pointB.transform)
         {
             rb.velocity = new Vector2(speed, 0);
         }
